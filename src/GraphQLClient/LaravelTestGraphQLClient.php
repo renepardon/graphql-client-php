@@ -43,7 +43,7 @@ class LaravelTestGraphQLClient extends Client
             ));
         }
 
-        $responseBody = json_decode($this->response->getContent(), true);
+        $responseBody = json_decode($response->getContent(), true);
 
         if (isset($responseBody['errors'])) {
             throw new GraphQLException(sprintf(
