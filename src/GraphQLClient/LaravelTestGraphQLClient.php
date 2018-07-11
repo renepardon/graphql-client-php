@@ -33,13 +33,13 @@ class LaravelTestGraphQLClient extends Client
 
     protected function postQuery(array $data): array
     {
-        $this->post($this->getBaseUrl(), $data);
+        $response = $this->post($this->getBaseUrl(), $data);
 
-        if ($this->response->getStatusCode() >= 400) {
+        if ($response->getStatusCode() >= 400) {
             throw new GraphQLException(sprintf(
                 'Mutation failed with status code %d and error %s',
-                $this->response->getStatusCode(),
-                $this->response->getContent()
+                $response->getStatusCode(),
+                $response->getContent()
             ));
         }
 
