@@ -1,21 +1,28 @@
 <?php
 
-
 namespace GraphQLClient;
 
-
+/**
+ * Class Field
+ *
+ * @package GraphQLClient
+ */
 class Field
 {
-    /** @var Field[]|array */
+    /**
+     * @var Field[]|array
+     */
     private $children;
 
-    /** @var string */
+    /**
+     * @var string
+     */
     private $name;
 
     /**
      * Field constructor.
      *
-     * @param string $name
+     * @param string        $name
      * @param Field[]|array $children
      */
     public function __construct(string $name, array $children = [])
@@ -32,9 +39,15 @@ class Field
         return $this->children;
     }
 
+    /**
+     * @param Field $field
+     *
+     * @return Field
+     */
     public function addChild(Field $field): Field
     {
-        $children []= $field;
+        $this->children[] = $field;
+
         return $this;
     }
 

@@ -9,7 +9,9 @@ namespace GraphQLClient;
  */
 class ResponseData
 {
-    /** @var mixed */
+    /**
+     * @var mixed
+     */
     private $data;
 
     /**

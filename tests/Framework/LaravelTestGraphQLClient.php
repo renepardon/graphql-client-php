@@ -5,11 +5,10 @@ namespace GraphQLClient;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\Concerns\MakesHttpRequests;
 
-
 /**
  * Class LaravelTestGraphQLClient
  *
- * @package parku\AppBundle\Tests\GraphQL
+ * @package GraphQLClient
  */
 class LaravelTestGraphQLClient extends Client
 {

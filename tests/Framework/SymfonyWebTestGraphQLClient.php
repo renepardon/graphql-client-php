@@ -8,11 +8,13 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 /**
  * Class SymfonyWebTestGraphQLClient
  *
- * @package parku\AppBundle\Tests\GraphQL
+ * @package GraphQLClient
  */
 class SymfonyWebTestGraphQLClient extends Client
 {
-    /** @var SymfonyClient */
+    /**
+     * @var SymfonyClient
+     */
     private $symfonyClient;
 
     /**

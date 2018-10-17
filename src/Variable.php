@@ -1,26 +1,34 @@
 <?php
 
-
 namespace GraphQLClient;
 
-
+/**
+ * Class Variable
+ *
+ * @package GraphQLClient
+ */
 class Variable
 {
-    /** @var string */
+    /**
+     * @var string
+     */
     private $name;
 
-    /** @var mixed */
+    /**
+     * @var mixed
+     */
     private $value;
 
-    /** @var string */
+    /**
+     * @var string
+     */
     private $type;
 
     /**
-     * Field constructor.
-     *
      * @param string $name
      * @param mixed $value
      * @param string $type
+     *
      * @internal param Field[]|array $children
      */
     public function __construct(string $name, $value, string $type = 'String')

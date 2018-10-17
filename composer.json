@@ -1,5 +1,5 @@
 {
-  "name": "goltzchristian/graphql-client-php",
+  "name": "renepardon/graphql-client-php",
   "description": "A graphql client for php.",
   "type": "library",
   "keywords": [
@@ -11,17 +11,22 @@
     {
       "name": "Christian Goltz",
       "email": "goltzchristian@gmail.com"
+    },
+    {
+      "name": "Christoph, René Pardon",
+      "email": "rene.pardon@boonweb.de"
     }
   ],
   "require": {
-    "php": "^7.0"
+    "php": "^7.0",
+    "ext-json": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "6.*"
   },
   "autoload": {
-    "psr-0" : {
-      "GraphQLClient\\" : "src"
+    "psr-4": {
+      "GraphQLClient\\": "src/"
     }
   }
 }
