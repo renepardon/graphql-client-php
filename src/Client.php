@@ -99,6 +99,10 @@ abstract class Client
             $fieldString .= '{';
 
             foreach ($query->getChildren() as $field) {
+                if (is_string($field)) {
+                    $field = new Field($field);
+                }
+
                 $fieldString .= sprintf('%s', $this->getQueryString($field));
                 $fieldString .= PHP_EOL;
             }

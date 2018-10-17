@@ -4,7 +4,7 @@ This is a small and simple PHP client to make requests against GraphQL APIs.
 
 # Setup
 
-    composer require renepardon/graphql-client-php=1.1.0
+    composer require renepardon/graphql-client-php
 
 # TODOs
 
